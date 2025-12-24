@@ -1,0 +1,145 @@
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  [role="list"] {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    min-block-size: 100vh;
+  }
+
+  h1,
+  h2,
+  h3,
+  button,
+  input,
+  label {
+    line-height: 1.1;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+
+  p,
+  li {
+    text-wrap: pretty;
+  }
+
+  img,
+  picture {
+    max-inline-size: 100%;
+    display: block;
+  }
+
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+}
+
+@layer base {
+  :root {
+    --ff-heading: "Poppins", sans-serif;
+    --ff-body: "Inter", sans-serif;
+
+    --fs-0: 0.8rem;
+    --fs-1: 1rem;
+    --fs-2: 1.25rem;
+    --fs-3: 1.56rem;
+    --fs-4: 1.95rem;
+    --fs-5: 2.44rem;
+    --fs-6: 3.81rem;
+
+    --primary-color: #463ee3;
+    --secondary-color: #ffd700;
+    
+    --border-radius: 100px;
+    --button-padding: 0.4rem 0.8rem;
+    
+    --link-padding: 1rem 0.6rem;
+  }
+
+  html {
+    font-family: var(--ff-body);
+    font-size: 125%;
+    line-height: 1.6;
+  }
+
+  body {
+    background-color: white;
+    font-size: var(--fs-1);
+    color: var(--dark-body-color);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--ff-heading);
+    color: var(--dark-heading-color);
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+@layer layout {
+  .wrapper {
+    --wrapper-max-width: 96%;
+    max-width: var(--wrapper-max-width);
+    padding-inline: 1rem;
+  }
+
+  section .wrapper {
+    padding-block: 4.8rem;
+  }
+
+  .buttons {
+    padding-top: var(--lockup-range);
+    gap: var(--button-space);
+    display: flex;
+  }
+
+  section {
+    position: relative;
+  }
+
+  h1 {
+    font-size: var(--fs-6);
+  }
+
+  h2 {
+    font-size: var(--fs-5);
+  }
+
+  h3 {
+    font-size: var(--fs-4);
+  }
+}
+

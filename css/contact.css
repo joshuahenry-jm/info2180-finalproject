@@ -1,0 +1,51 @@
+#title {
+  width: max-content;
+}
+
+select,
+input {
+  border: solid 2px rgb(122, 122, 122);
+  padding: 0.4rem 0.8rem;
+  background-color: white;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.fields {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  width: 100%;
+}
+
+.btm-box {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.btm-box .message {
+  background-color: rgb(226, 226, 226);
+  width: 100%;
+  border-radius: 5px;
+}
+
+.btm-box button {
+  transition: background-color 0.2s;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  background-color: var(--primary-color);
+  padding: var(--button-padding);
+}
+
+.btm-box button:hover {
+  background-color: black;
+}

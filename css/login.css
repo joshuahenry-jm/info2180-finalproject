@@ -1,0 +1,81 @@
+header {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+header .wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  height: 80px;
+}
+
+header .wrapper .dol {
+  height: 40px;
+  filter: invert(1);
+}
+
+section .wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  max-width: 1000px;
+  padding-block: 9.6rem !important;
+}
+
+section .wrapper h1 {
+  display: flex;
+  text-align: center;
+}
+
+section .wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+section .wrapper form input {
+  padding: 0.4rem;
+  border-radius: 5px;
+}
+
+section .wrapper form a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  padding-block: 0.4rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(0px);
+  transition: background-color 0.2s, transform 0.4s;
+}
+
+section .wrapper form a:hover {
+  background-color: black;
+}
+
+section .wrapper form a:active {
+  transform: translateY(5px);
+  text-decoration: none;
+}
+
+section .wrapper form a img {
+  height: 30px;
+  filter: invert(1);
+}
+
+footer {
+  background-color: rgb(0, 0, 0);
+}
+
+footer .wrapper {
+  padding-block: 3.2rem;
+  text-align: center;
+  color: white;
+}
