@@ -2,7 +2,6 @@ CREATE DATABASE dolphin_crm;
 USE dolphin_crm;
 
 
-
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     firstname VARCHAR(50) NOT NULL,
@@ -50,5 +49,5 @@ CREATE TABLE notes (
 
 INSERT INTO users (firstname, lastname, email, password_hash, role)
 VALUES (
-    'Admin', 'User', 'admin@project2.com', SHA2('password123', 256),  'admin'
+    'Admin', 'User', 'admin@project2.com', '$2y$10$2DINgtrnrVkIP3k7ocM/Ie1nug7atswJ3fRobwaHyS2XOrpY2z6T6',  'Admin'
 );
